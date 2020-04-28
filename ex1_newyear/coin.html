@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+@-webkit-keyframes right_high{
+  0.0000% { -webkit-transform: translate(0%, 0%) rotateX(0deg); }
+  7.5056% { -webkit-transform: translate(0.03896103896103896%, -6.493506493506493%) rotateX(40deg); }
+  13.2496% { -webkit-transform: translate(0.5584415584415584%, -11.441558441558442%) rotateX(60deg); }
+  19.1675% { -webkit-transform: translate(1.4935064935064934%, -16.480519480519483%) rotateX(80deg); }
+  25.2034% { -webkit-transform: translate(2.844155844155844%, -21.532467532467532%) rotateX(100deg); }
+  31.3058% { -webkit-transform: translate(4.623376623376624%, -26.506493506493506%) rotateX(120deg); }
+  37.4309% { -webkit-transform: translate(6.8441558441558445%, -31.324675324675322%) rotateX(140deg); }
+  43.5459% { -webkit-transform: translate(9.506493506493507%, -35.896103896103895%) rotateX(160deg); }
+  49.6327% { -webkit-transform: translate(12.61038961038961%, -40.15584415584416%) rotateX(180deg); }
+  55.6928% { -webkit-transform: translate(16.18181818181818%, -44%) rotateX(200deg); }
+  61.7523% { -webkit-transform: translate(20.20779220779221%, -47.36363636363636%) rotateX(220deg); }
+  67.8655% { -webkit-transform: translate(24.7012987012987%, -50.15584415584415%) rotateX(240deg); }
+  74.1181% { -webkit-transform: translate(29.675324675324678%, -52.2987012987013%) rotateX(260deg); }
+  80.6256% { -webkit-transform: translate(35.142857142857146%, -53.688311688311686%) rotateX(280deg); }
+  87.5282% { -webkit-transform: translate(41.090909090909086%, -54.27272727272727%)rotateX(300deg); }
+  91.1785% { -webkit-transform: translate(44.246753246753244%, -54.22077922077923%) rotateX(320deg); }
+  95.9654% { -webkit-transform: translate(48.37662337662338%, -53.83116883116883%) rotateX(340deg);opacity:1;}
+  100.0000% { -webkit-transform: translate(51.81818181818182%, -53.246753246753244%) rotateX(360deg);opacity:0;}
+}
+
+@-webkit-keyframes left_high{
+  0.0000% { -webkit-transform: translate(-0%, 0%) rotateX(0deg);}
+  7.5056% { -webkit-transform: translate(-0.03896103896103896%, -6.493506493506493%) rotateX(40deg);}
+  13.2496% { -webkit-transform: translate(-0.5584415584415584%, -11.441558441558442%) rotateX(60deg);}
+  19.1675% { -webkit-transform: translate(-1.4935064935064934%, -16.480519480519483%) rotateX(80deg);}
+  25.2034% { -webkit-transform: translate(-2.844155844155844%, -21.532467532467532%) rotateX(100deg);}
+  31.3058% { -webkit-transform: translate(-4.623376623376624%, -26.506493506493506%) rotateX(120deg);}
+  37.4309% { -webkit-transform: translate(-6.8441558441558445%, -31.324675324675322%) rotateX(140deg);}
+  43.5459% { -webkit-transform: translate(-9.506493506493507%, -35.896103896103895%) rotateX(160deg);}
+  49.6327% { -webkit-transform: translate(-12.61038961038961%, -40.15584415584416%) rotateX(180deg);}
+  55.6928% { -webkit-transform: translate(-16.18181818181818%, -44%) rotateX(200deg);}
+  61.7523% { -webkit-transform: translate(-20.20779220779221%, -47.36363636363636%) rotateX(220deg);}
+  67.8655% { -webkit-transform: translate(-24.7012987012987%, -50.15584415584415%) rotateX(240deg);}
+  74.1181% { -webkit-transform: translate(-29.675324675324678%, -52.2987012987013%) rotateX(260deg);}
+  80.6256% { -webkit-transform: translate(-35.142857142857146%, -53.688311688311686%) rotateX(280deg);}
+  87.5282% { -webkit-transform: translate(-41.090909090909086%, -54.27272727272727%) rotateX(300deg);}
+  91.1785% { -webkit-transform: translate(-44.246753246753244%, -54.22077922077923%) rotateX(320deg);}
+  95.9654% { -webkit-transform: translate(-48.37662337662338%, -53.83116883116883%) rotateX(340deg);opacity:1; }
+  100.0000% { -webkit-transform: translate(-51.81818181818182%, -53.246753246753244%) rotateX(360deg);opacity:0; }
+}
+@-webkit-keyframes right_middle{
+  0.0000% { -webkit-transform: translate(0%, 0%) ; }
+  12.6035% { -webkit-transform: translate(3.3766233766233764%, -7.779220779220779%) ; }
+  24.5252% { -webkit-transform: translate(7.116883116883116%, -14.870129870129869%) ; }
+  30.2705% { -webkit-transform: translate(9.194805194805195%, -18.116883116883116%) ; }
+  35.9076% { -webkit-transform: translate(11.441558441558442%, -21.16883116883117%) ; }
+  41.4769% { -webkit-transform: translate(13.909090909090907%, -24.000000000000004%) ; }
+  47.0302% { -webkit-transform: translate(16.597402597402596%, -26.5974025974026%) ; }
+  52.6311% { -webkit-transform: translate(19.532467532467535%, -28.935064935064936%) ; }
+  58.3534% { -webkit-transform: translate(22.766233766233768%, -31.02597402597403%) ; }
+  64.2790% { -webkit-transform: translate(26.311688311688307%, -32.84415584415584%) ; }
+  70.4947% { -webkit-transform: translate(30.207792207792206%, -34.37662337662338%) ; }
+  77.0888% { -webkit-transform: translate(34.467532467532465%, -35.61038961038961%) ; }
+  84.1489% { -webkit-transform: translate(39.116883116883116%, -36.532467532467535%) ; }
+  91.7592% { -webkit-transform: translate(44.20779220779221%, -37.12987012987013%) ; opacity:1;}
+  100.0000% { -webkit-transform: translate(49.74025974025974%, -37.4025974025974%) ; opacity:0;}
+} 
+@-webkit-keyframes left_middle{
+  0.0000% { -webkit-transform: translate(0%, 0%) ; }
+  12.6035% { -webkit-transform: translate(-3.3766233766233764%, -7.779220779220779%) ; }
+  24.5252% { -webkit-transform: translate(-7.116883116883116%, -14.870129870129869%) ; }
+  30.2705% { -webkit-transform: translate(-9.194805194805195%, -18.116883116883116%) ; }
+  35.9076% { -webkit-transform: translate(-11.441558441558442%, -21.16883116883117%) ; }
+  41.4769% { -webkit-transform: translate(-13.909090909090907%, -24.000000000000004%) ; }
+  47.0302% { -webkit-transform: translate(-16.597402597402596%, -26.5974025974026%) ; }
+  52.6311% { -webkit-transform: translate(-19.532467532467535%, -28.935064935064936%) ; }
+  58.3534% { -webkit-transform: translate(-22.766233766233768%, -31.02597402597403%) ; }
+  64.2790% { -webkit-transform: translate(-26.311688311688307%, -32.84415584415584%) ; }
+  70.4947% { -webkit-transform: translate(-30.207792207792206%, -34.37662337662338%) ; }
+  77.0888% { -webkit-transform: translate(-34.467532467532465%, -35.61038961038961%) ; }
+  84.1489% { -webkit-transform: translate(-39.116883116883116%, -36.532467532467535%) ; }
+  91.7592% { -webkit-transform: translate(-44.20779220779221%, -37.12987012987013%) ; opacity:1;}
+  100.0000% { -webkit-transform: translate(-49.74025974025974%, -37.4025974025974%) ; opacity:0;}
+} 
+@-webkit-keyframes right_low{
+  0.0000% { -webkit-transform: translate(0%, 0%) ; }
+  6.2411% { -webkit-transform: translate(1.8181818181818181%, -3.8441558441558445%) ; }
+  12.2281% { -webkit-transform: translate(3.987012987012987%, -7.311688311688311%) ; }
+  18.0246% { -webkit-transform: translate(6.467532467532468%, -10.376623376623376%) ; }
+  23.6938% { -webkit-transform: translate(9.272727272727273%, -13.05194805194805%) ; }
+  29.2976% { -webkit-transform: translate(12.35064935064935%, -15.311688311688313%) ; }
+  34.8947% { -webkit-transform: translate(15.688311688311687%, -17.16883116883117%) ; }
+  40.5397% { -webkit-transform: translate(19.25974025974026%, -18.61038961038961%) ; }
+  46.2821% { -webkit-transform: translate(23.03896103896104%, -19.623376623376622%) ; }
+  52.1656% { -webkit-transform: translate(27%, -20.22077922077922%) ; }
+  58.2289% { -webkit-transform: translate(31.12987012987013%, -20.38961038961039%) ; }
+  64.5055% { -webkit-transform: translate(35.40259740259741%, -20.116883116883116%) ; }
+  71.0245% { -webkit-transform: translate(39.79220779220779%, -19.415584415584416%) ; }
+  77.8117% { -webkit-transform: translate(44.272727272727266%, -18.25974025974026%) ; }
+  84.8898% { -webkit-transform: translate(48.83116883116883%, -16.662337662337663%) ; }
+  92.2795% { -webkit-transform: translate(53.42857142857142%, -14.597402597402597%) ; opacity:1;}
+  100.0000% { -webkit-transform: translate(58.05194805194805%, -12.077922077922079%) ; opacity:0;}
+}
+@-webkit-keyframes left_low{
+  0.0000% { -webkit-transform: translate(0%, 0%) ; }
+  6.2411% { -webkit-transform: translate(-1.8181818181818181%, -3.8441558441558445%) ; }
+  12.2281% { -webkit-transform: translate(-3.987012987012987%, -7.311688311688311%) ; }
+  18.0246% { -webkit-transform: translate(-6.467532467532468%, -10.376623376623376%) ; }
+  23.6938% { -webkit-transform: translate(-9.272727272727273%, -13.05194805194805%) ; }
+  29.2976% { -webkit-transform: translate(-12.35064935064935%, -15.311688311688313%) ; }
+  34.8947% { -webkit-transform: translate(-15.688311688311687%, -17.16883116883117%) ; }
+  40.5397% { -webkit-transform: translate(-19.25974025974026%, -18.61038961038961%) ; }
+  46.2821% { -webkit-transform: translate(-23.03896103896104%, -19.623376623376622%) ; }
+  52.1656% { -webkit-transform: translate(-27%, -20.22077922077922%) ; }
+  58.2289% { -webkit-transform: translate(-31.12987012987013%, -20.38961038961039%) ; }
+  64.5055% { -webkit-transform: translate(-35.40259740259741%, -20.116883116883116%) ; }
+  71.0245% { -webkit-transform: translate(-39.79220779220779%, -19.415584415584416%) ; }
+  77.8117% { -webkit-transform: translate(-44.272727272727266%, -18.25974025974026%) ; }
+  84.8898% { -webkit-transform: translate(-48.83116883116883%, -16.662337662337663%) ; }
+  92.2795% { -webkit-transform: translate(-53.42857142857142%, -14.597402597402597%) ; opacity:1;}
+  100.0000% { -webkit-transform: translate(-58.05194805194805%, -12.077922077922079%) ; opacity:0;}
+}
+
+.evt_section{position:relative;width:770px;margin:0 auto;height:800px;overflow: hidden;background:beige url(img/bg_coin.png) no-repeat center bottom;}
+.evt_section span{position:absolute;bottom:0;left:0;width:100%;height:800px;animation-duration:.4s;animation-fill-mode:forwards;background-position:center bottom;background-size:100px;background-repeat:no-repeat;transform-origin:center 750px;}
+.coin1{animation-name:right_high;background: url(img/coin_45_0.png);}  
+.coin2{animation-name:left_high;background: url(img/coin_315_90.png);animation-delay: .1s; }  
+.coin3{animation-name:right_low;background: url(img/coin_315_90.png); animation-delay: .15s; }  
+.coin4{animation-name:left_low;background: url(img/coin_45_0.png);animation-delay: .2s; }  
+.coin5{animation-name:right_middle;background: url(img/coin_45_0.png);animation-delay: .25s; }  
+.coin6{animation-name:left_middle;background: url(img/coin_45_0.png);animation-delay: .3s; }  
+</style>
+<body>
+  <div class="evt_section">
+    <span class="coin1"></span>
+    <span class="coin2"></span>
+    <span class="coin3"></span>
+    <span class="coin4"></span>
+    <span class="coin5"></span>
+    <span class="coin6"></span>
+  </div>
+</body>
+</html>

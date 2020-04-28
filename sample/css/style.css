@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* reset */
+body,html{height:100%;}
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,table,textarea{font-size:1.6rem}
+body{-webkit-text-size-adjust:none}
+button,fieldset,img{border:0}
+fieldset{min-width:0}
+img,li{vertical-align:top}
+embed,iframe,img,object,video{max-width:100%}
+li,ol,ul{list-style:none}
+address,em{font-style:normal}
+a{color:inherit;text-decoration:none}
+table{border-collapse:collapse}
+input,select{appearance:none;-webkit-appearance:none;border-radius:0;-webkit-border-radius:0;-webkit-box-shadow:none}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none}
+input,label{vertical-align:middle}
+button{background:0 0;color:inherit}
+textarea{appearance:none;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none}
+.blind{overflow:hidden;position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;line-height:0;margin:-1px}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+body,button,h1,h2,h3,h4,h5,h6,input,select,table,textarea{font-family:-apple-system-font,'Apple SD Gothic Neo',Helvetica,sans-serif;letter-spacing:-.05rem}
+
+iframe{border:0}
+.wrap{width:960px;margin:30px auto;}
+.wrap:after{content:'';display:block;clear:both;}
+.box{float:left;margin:5px;border:1px solid #ccc;}
+.cont{margin:8px;background:#f4fefd;}

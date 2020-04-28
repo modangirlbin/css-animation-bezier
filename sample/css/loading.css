@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.txt_loading{position:relative;width:94px;height:94px}
+.txt_loading:after{position:absolute;top:0;left:0;width:100%;height:100%;border:4px solid #fff;border-radius:50%;box-sizing:border-box;opacity:0.5;content:""}
+.txt_loading > span{overflow:hidden;position:absolute;top:0;z-index:1;width:50%;height:100%}
+.txt_loading .charge_left{left:0}
+.txt_loading .brd_charge{position:absolute;top:0;width:100%;height:100%;border:4px solid #049dff;box-sizing:border-box;-webkit-animation-play-state:paused;-moz-animation-play-state:paused;animation-play-state:paused;-webkit-animation:ani_loading 1.5s linear forwards 1.5s;-moz-animation:ani_loading 1.5s linear forwards 1.5s;animation:ani_loading 1.5s linear forwards 1.5s;}
+.txt_loading .charge_left .brd_charge{left:100%;border-top-right-radius:80px;border-bottom-right-radius:80px;border-left:0;-webkit-transform-origin:center left;-ms-transform-origin:center left;-moz-transform-origin:center left;-o-transform-origin:center left;transform-origin:center left;}
+.txt_loading .charge_right{right:0}
+.txt_loading .charge_right .brd_charge{left:-100%;border-top-left-radius:80px;border-bottom-left-radius:80px;border-right:0;-webkit-transform-origin:center right;-ms-transform-origin:center right;-moz-transform-origin:center right;-o-transform-origin:center right;transform-origin:center right;-webkit-animation:ani_loading 1.5s linear forwards;-moz-animation:ani_loading 1.5s linear forwards;animation:ani_loading 1.5s linear forwards;}
+.txt_loading.running .brd_charge {-webkit-animation-play-state:running;-moz-animation-play-state:running;animation-play-state:running;}
+
+@-webkit-keyframes ani_loading{
+    0%{-webkit-transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(180deg);}
+}
+
+@-moz-keyframes ani_loading{
+    0%{-moz-transform:rotate(0deg);}
+    100%{-moz-transform:rotate(180deg);}
+}
+
+@keyframes ani_loading{
+    0%{-ms-transform:rotate(0deg);transform:rotate(0deg)}
+    100%{-ms-transform:rotate(180deg);transform:rotate(180deg)}
+}

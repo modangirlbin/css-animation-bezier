@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+body{margin:8px;background-color:#fff;}
+
+#header, #footer, #lypopOpener{display:none !important;}
+#container{padding-top:0 !important;}
+
